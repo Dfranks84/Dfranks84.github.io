@@ -1,0 +1,70 @@
+/* styles.css
+Author: Dennis Franks Jr
+Portfolio styling
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #f8fafc);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #2563eb;
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #111827;
+    color: white;
+    padding: 15px;
+}
