@@ -117,12 +117,11 @@ tfoot {
     background-color: #e5e7eb;
 }
 
-
-/* ===== COLUMN COLORS ===== */
-.project-name-col {
+/* ===== COLUMN COLORS (REQUIRED FORMAT) ===== */
+#firstCol {
     background-color: #dbeafe;
 }
 
-.project-image-col {
+#thirdCol {
     background-color: #fef3c7;
 }
