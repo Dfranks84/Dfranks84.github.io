@@ -68,3 +68,61 @@ footer {
     color: white;
     padding: 15px;
 }
+/* ===== NAVIGATION TRANSITION ===== */
+nav ul li a {
+    transition: background-color 0.3s ease;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #1e40af;
+}
+
+
+/* ===== SECTION HOVER ZOOM ===== */
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+
+/* ===== TABLE STYLING ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #cbd5e1;
+}
+
+tfoot {
+    background-color: #e5e7eb;
+}
+
+
+/* ===== COLUMN COLORS ===== */
+.project-name-col {
+    background-color: #dbeafe;
+}
+
+.project-image-col {
+    background-color: #fef3c7;
+}
