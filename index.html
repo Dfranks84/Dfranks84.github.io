@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,97 +9,119 @@
     <meta name="author" content="Dennis Franks Jr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<!-- Page title shown in browser tab -->
-<title>My Portfolio</title>
-<link rel="stylesheet" href="styles.css">
-```
-
+    <!-- Page title shown in browser tab -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-```
-<!-- Header Section -->
-<header>
-    <h1>Welcome to My Website</h1>
-</header>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
 
-<!-- Navigation Menu -->
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Main Content Area -->
-<main>
+    <!-- Main Content Area -->
+    <main>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This section contains information about me.</p>
-    </section>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This section contains information about me.</p>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>This section highlights some of my projects.</p>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>This section highlights some of my projects.</p>
 
-        <!-- Projects table displaying portfolio work -->
-        <table>
-            <caption>Sample Portfolio Projects</caption>
+            <!-- Projects table displaying portfolio work -->
+            <table>
+                <caption>Sample Portfolio Projects</caption>
 
-            <colgroup>
-                <col id="firstCol">
-                <col>
-                <col id="thirdCol">
-            </colgroup>
+                <colgroup>
+                    <col id="firstCol">
+                    <col>
+                    <col id="thirdCol">
+                </colgroup>
 
-            <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                </tr>
-            </thead>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <td>Personal Portfolio Website</td>
-                    <td>A responsive website that introduces me, highlights my work, and provides contact information.</td>
-                    <td><img src="https://placehold.co/100x100" alt="Project Image"></td>
-                </tr>
-                <tr>
-                    <td>Student Grade Tracker</td>
-                    <td>A simple web application designed to organize assignments, track grades, and monitor academic progress.</td>
-                    <td><img src="https://placehold.co/100x100" alt="Project Image"></td>
-                </tr>
-            </tbody>
+                <tbody>
+                    <tr>
+                        <td>Personal Portfolio Website</td>
+                        <td>A responsive website that introduces me, highlights my work, and provides contact information.</td>
+                        <td><img src="https://placehold.co/100x100" alt="Project Image"></td>
+                    </tr>
+                    <tr>
+                        <td>Student Grade Tracker</td>
+                        <td>A simple web application designed to organize assignments, track grades, and monitor academic progress.</td>
+                        <td><img src="https://placehold.co/100x100" alt="Project Image"></td>
+                    </tr>
+                </tbody>
 
-            <tfoot>
-                <tr>
-                    <td colspan="3">These projects represent sample work for my portfolio homepage.</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">These projects represent sample work for my portfolio homepage.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can contact me through email or social media.</p>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out the form below to get in touch with me.</p>
 
-</main>
+            <!-- Contact form for user messages -->
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2026 Dennis Franks Jr</p>
-</footer>
-```
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Dennis Franks Jr</p>
+    </footer>
 
 </body>
 
