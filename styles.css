@@ -3,7 +3,7 @@ Author: Dennis Franks Jr
 Portfolio styling
 */
 
-/* ===== PAGE STYLING ===== */
+/* ===== PAGE ===== */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,31 +20,23 @@ header {
 }
 
 header h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
     margin: 0;
 }
 
-/* ===== NAVIGATION ===== */
+/* ===== NAV ===== */
 nav {
     background-color: #2563eb;
     padding: 12px 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
 
-    /* Flexbox for navigation menu */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 20px;
-}
-
-nav ul li {
-    margin: 0;
 }
 
 nav ul li a {
@@ -61,12 +53,11 @@ nav ul li a:hover {
     color: yellow;
 }
 
-/* ===== MAIN CONTENT AREA ===== */
+/* ===== MAIN ===== */
 main {
     width: 80%;
     margin: 20px auto;
 
-    /* Flexbox for main layout */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -76,10 +67,8 @@ main {
 section {
     background: white;
     padding: 20px;
-    margin-bottom: 0;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
@@ -87,93 +76,15 @@ section:hover {
     transform: scale(1.02);
 }
 
-/* ===== CONTACT FORM ===== */
-.contact-form {
-    /* Flexbox for contact form */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.form-group {
-    /* Flexbox for each label/input pair */
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-label {
-    font-weight: bold;
-}
-
-/* Form field styling */
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 12px;
-    border: 1px solid #999;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-
-    /* Required transition for input and textarea */
-    transition: border-color 0.3s ease;
-}
-
-/* Hover and focus effects */
-input[type="text"]:hover,
-input[type="email"]:hover,
-textarea:hover {
-    border-color: #2563eb;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #1e3a8a;
-    outline: none;
-}
-
-/* Submit button styling */
-input[type="submit"] {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-
-    /* Required transition for submit button */
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #1e40af;
-}
-
-/* ===== TABLE STYLING ===== */
+/* ===== TABLE ===== */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
 }
 
-caption {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-th,
-td {
+th, td {
     border: 1px solid #999;
-    padding: 12px;
-    text-align: left;
+    padding: 10px;
 }
 
 thead {
@@ -184,7 +95,6 @@ tfoot {
     background-color: #e5e7eb;
 }
 
-/* ===== COLUMN COLORS ===== */
 #firstCol {
     background-color: #dbeafe;
 }
@@ -193,63 +103,73 @@ tfoot {
     background-color: #fef3c7;
 }
 
+/* ===== FORM ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    font-size: 0.9rem;
     background-color: #111827;
     color: white;
     padding: 15px;
 }
 
-/* ===== RESPONSIVE DESIGN: PHONE ===== */
-@media screen and (max-width: 599px) {
+/* ===== RESPONSIVE ===== */
+
+/* Phone */
+@media (max-width: 599px) {
+    nav ul {
+        flex-direction: column;
+    }
+
     main {
         width: 95%;
     }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    th,
-    td {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
 }
 
-/* ===== RESPONSIVE DESIGN: TABLET ===== */
-@media screen and (min-width: 600px) and (max-width: 991px) {
+/* Tablet */
+@media (min-width: 600px) and (max-width: 991px) {
     main {
         width: 90%;
     }
-
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
 }
 
-/* ===== RESPONSIVE DESIGN: DESKTOP ===== */
-@media screen and (min-width: 992px) {
+/* Desktop */
+@media (min-width: 992px) {
     main {
-        width: 80%;
         max-width: 1100px;
-    }
-
-    nav ul {
-        flex-direction: row;
     }
 }
