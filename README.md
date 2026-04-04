@@ -1,14 +1,14 @@
-# Dennis Franks Jr. - Responsive Website Project
+# Dennis Franks Jr. - Personal Website
 
 ## Project Overview
-This project is a responsive website created using HTML5 and CSS3. The website includes multiple sections such as About, Projects, and Contact, along with a navigation menu and styled layout.
+This project is a personal website built using HTML5 and CSS3. It serves as a portfolio to showcase my background, projects, and contact information. The website includes multiple sections such as About Me, Projects, and Contact.
 
 ## Features
 - Responsive layout using Flexbox
 - Navigation menu with internal links
-- Contact form with input validation
-- External CSS styling
-- Smooth animations and transitions
+- Projects section with structured content
+- Styled layout using external CSS
+- Clean and user-friendly design
 
 ## Technologies Used
 - HTML5
@@ -17,7 +17,7 @@ This project is a responsive website created using HTML5 and CSS3. The website i
 - XAMPP (Local Hosting)
 
 ## Live Website
-https://dfranks84.github.io/5.9-Performance-Assessment/
+https://dfranks84.github.io/
 
 ## Local Hosting
 This website was tested locally using XAMPP by placing the project files in the htdocs directory and accessing the site through localhost.
